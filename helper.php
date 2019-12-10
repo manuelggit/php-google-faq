@@ -1,11 +1,13 @@
 <?php
 
 function printDom($arr){
-  echo $arr['domanda'];
+  $dom = $arr['domanda'];
+  echo nl2br($dom);
 }
 
 function printRisp($arr){
-  echo $arr['risposta'];
+  $risp = $arr['risposta'];
+  echo nl2br($risp);
 }
 
 ?>
