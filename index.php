@@ -14,19 +14,18 @@ queste domande e risposte con PHP. -->
       include "data.php";
       include "helper.php";
 
-
     ?>
   </head>
   <body>
 
     <?php
 
-    foreach ($arr as $domrisp) {
+    foreach ($array as $domrisp) {
 
         ?>
 
-        <h2><?php echo $domrisp['domanda'] ?></h2>
-        <h4><?php echo $domrisp['risposta'] ?></h4>
+        <h2><?php printDom($domrisp); ?></h2>
+        <h4><?php printRisp($domrisp); ?></h4>
 
         <?php
 
